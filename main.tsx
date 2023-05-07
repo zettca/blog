@@ -1,8 +1,12 @@
-import blog from "https://deno.land/x/blog@0.4.1/blog.tsx";
+import blog from "https://deno.land/x/blog@0.6.0/blog.tsx";
+
+// syntax highlighting
+import "https://esm.sh/prismjs@1.29.0/components/prism-python?no-check";
+import "https://esm.sh/prismjs@1.29.0/components/prism-jsx?no-check";
+import "https://esm.sh/prismjs@1.29.0/components/prism-tsx?no-check";
 
 blog({
   title: "Blog",
-  description: "My opinionated blog where I ramble about stuff",
 
   author: "zettca",
   favicon: "https://zettca.xyz/favicon.ico",
@@ -10,8 +14,7 @@ blog({
   avatar: "https://avatars.githubusercontent.com/u/638946",
   avatarClass: "rounded-4",
 
-  dateStyle: "medium",
-  lang: "en-UK",
+  lang: "en",
 
   links: [
     { title: "Home", url: "https://zettca.xyz/" },
