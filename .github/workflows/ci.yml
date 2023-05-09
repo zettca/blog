@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - uses: denoland/setup-deno@v1
 
@@ -22,4 +22,4 @@ jobs:
         run: deno lint
 
       - name: Check 🔎
-        run: deno check *.tsx
+        run: deno check main.tsx
